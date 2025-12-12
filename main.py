@@ -21,7 +21,7 @@ db = client[MONGO_DB]
 def read_root():
     return {"status": "API Conectada al VPS", "docs": "/docs"}
 
-@app.get("/api/toda-la-data")
+@app.get("/sunat/api-mongo")
 def get_all_data():
     # USAMOS LA COLECCIÓN DE TU EJEMPLO:
     collection_name = "testing_michell"
